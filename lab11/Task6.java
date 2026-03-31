@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Task6 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Введите число: ");
+        double a = sc.nextDouble();
+
+        if (a >= 0) {
+            System.out.println("Корень: " + Math.sqrt(a));
+        } else {
+            System.out.println("Ошибка: отрицательное число");
+        }
+    }
+}
