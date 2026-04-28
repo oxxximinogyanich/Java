@@ -1,7 +1,17 @@
-import java.util.*;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your solution here.
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int sum = 0;
+
+        while (n != 0) {
+            sum += n % 10; // берём последнюю цифру
+            n /= 10;       // убираем последнюю цифру
+        }
+
+        System.out.println(sum);
     }
 }
